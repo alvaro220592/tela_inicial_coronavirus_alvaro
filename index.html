@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Instaação do bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!-- Estilização local -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-fluid fixed-top p-3 shadow titulo-site"><h1>Sistema c@r@navirus</h1></div>
+    
+    <div class="container shadow mb-3 p-3 rounded-3">
+        <form action="#" method="post">
+            <div class="row"><h2 class="mb-3 mt-3">Dados pessoais</h2></div>
+            <div class="row">
+                <div class="form-group mb-2 col-md-6">
+                    <label for="nome">Nome</label>
+                    <input title="Insira o nome" placeholder="Insira o nome" type="text" name="nome" id="nome" class="form-control">
+                </div>
+                
+                <div class="form-group mb-2 col-md-6">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input title="Insira o sobrenome" placeholder="Insira o sobrenome" type="text" name="sobrenome" id="sobrenome" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group mb-2 col-md-2">
+                    <label for="">Tipo sanguíneo</label>
+                    <div class="col-12 d-flex">
+                        <div class="col-6">
+                            <select title="Selecione o tipo" name="tipo" id="tipo" class="form-select" style="width:90%">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="AB">AB</option>
+                                <option value="O">O</option>
+                            </select>
+                        </div>
+                        <div class="col-6">                    
+                            <select title="Selecione o Rh" name="rh" id="rh" class="form-select">
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-2 col-md-4">
+                    <label for="profissao">Profissão</label>
+                    <input title="Insira a profissão" placeholder="Insira a profissão" type="text" name="profissao" id="profissao" class="form-control">
+                </div>
+
+                <div class="form-group mb-2 col-md-6">
+                    <label for="local_trabalho">Local de trabalho</label>
+                    <input title="Insira o local de trabalho" placeholder="Insira o local de trabalho" type="text" name="local_trabalho" id="local_trabalho" class="form-control">
+                </div>
+            </div>
+
+            <hr>
+
+
+            <div class="row"><h2 class="mb-3 mt-3">Contato</h2></div>
+            <div class="row">
+                <div class="form-group mb-2 col-md-3">
+                    <label for="tel_cel">Telefone celular</label>
+                    <input title="Insira o celular" placeholder="Insira o celular" type="text" name="tel_cel" id="tel_cel" class="form-control">
+                </div>
+
+                <div class="form-group mb-2 col-md-3">
+                    <label for="tel_fixo">Telefone fixo</label>
+                    <input title="Insira o telefone fixo" placeholder="Insira o telefone fixo" type="text" name="tel_fixo" id="tel_fixo" class="form-control">
+                </div>
+            </div>
+
+            <hr>
+
+
+            <h2 class="mb-3 mt-3">Endereço</h2>
+            <div class="row">
+                <div class="form-group mb-2 col-md-3">
+                    <label for="logradouro">Logradouro</label>
+                    <input title="Insira o logradouro" placeholder="Insira o logradouro" type="text" name="logradouro" id="logradouro" class="form-control">
+                </div>
+                <div class="form-group mb-2 col-md-1">
+                    <label for="numero">Nº</label>
+                    <input type="number" title="Insira o número" placeholder="Nº" name="numero" id="numero" class="form-control">
+                </div>
+                <div class="form-group mb-2 col-md-2">
+                    <label for="complemento">Complemento</label>
+                    <input title="Insira o complemento" placeholder="Insira o complemento" type="text" name="complemento" id="complemento" class="form-control">
+                </div>
+
+                <div class="form-group mb-2 col-md-3">
+                    <label for="bairro">Bairro</label>
+                    <input title="Insira o bairro" placeholder="Insira o bairro" type="text" name="bairro" id="bairro" class="form-control">
+                </div>
+                <div class="form-group mb-2 col-md-3">
+                    <label for="cep">CEP</label>
+                    <input type="text" title="Insira o CEP" placeholder="Insira o CEP" name="cep" id="cep" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group mb-2 col-md-2">
+                    <label for="cidade">Cidade</label>
+                    <input title="Insira a cidade" placeholder="Insira a cidade" type="text" name="cidade" id="cidade" class="form-control">
+                </div>
+                <div class="form-group mb-2 col-md-1">
+                    <label for="uf">UF</label>
+                    <input type="text" title="Insira a UF" placeholder="UF" name="uf" id="uf" class="form-control">
+                </div>
+            </div>
+
+            <hr>
+            
+            <h2 class="mb-3 mt-3">Dados de vacinação - vacinas tomadas</h2>
+            <div class="row">
+                <div class="form-group mb-4 col-md-6">
+                    <input onclick="check_nenhuma(this)" title="Selecione se nenhuma vacina foi tomada" type="checkbox" name="nenhuma" id="nenhuma">
+                    <label title="Selecione se nenhuma vacina foi tomada" style="cursor:pointer" for="nenhuma">Nenhuma</label>
+                </div>
+            </div>
+
+            <div id="vacinas_tomadas">
+                <div class="row">
+                    <div class="form-group mb-2 col-md-2">
+                        <input title="Selecione se a dose foi tomada" type="checkbox" name="dose_01" id="dose_01">
+                        <label title="Selecione se a dose foi tomada" style="cursor:pointer" for="dose_01">1ª dose</label>
+                    </div>
+                    <div class="form-group mb-2 col-md-4">
+                        <input title="Insira a marca da vacina" placeholder="Insira a marca da vacina" type="text" name="dose_01" id="dose_01" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group mb-2 col-md-2">
+                        <input title="Selecione se a dose foi tomada" type="checkbox" name="dose_02" id="dose_02">
+                        <label title="Selecione se a dose foi tomada" style="cursor:pointer" for="dose_02">2ª dose</label>
+                    </div>
+                    <div class="form-group mb-2 col-md-4">
+                        <input title="Insira a marca da vacina" placeholder="Insira a marca da vacina" type="text" name="dose_02" id="dose_02" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group mb-2 col-md-2">
+                        <input title="Selecione se a dose foi tomada" type="checkbox" name="dose_03" id="dose_03">
+                        <label title="Selecione se a dose foi tomada" style="cursor:pointer" for="dose_03">3ª dose</label>
+                    </div>
+                    <div class="form-group mb-2 col-md-4">
+                        <input title="Insira a marca da vacina" placeholder="Insira a marca da vacina" type="text" name="dose_03" id="dose_03" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 justify-content-between">
+                <div class="col-md-2">
+                    <button type="button" class="w-100 btn btn-danger">Cancelar</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="w-100 btn btn-success">Salvar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
